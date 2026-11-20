@@ -22,9 +22,17 @@ dotnet run --project KeyEventLogger
 
 Başlat düğmesine basıp deneme alanına yazın. Basılan tuşlar ve saatleri listelenir. Durdur düğmesi yeni kayıt eklenmesini durdurur. Yalnızca uygulamanın kendi penceresindeki klavye olayları işlenir.
 
-## Geliştirme durumu
+Temizle düğmesi listeyi ve deneme alanını boşaltır. TXT Kaydet düğmesi kayıtları tarih, saat ve tuş bilgileriyle UTF-8 metin dosyasına yazar. Dosya seçimi sırasında kayıt durdurulur; tekrar kayıt için Başlat'a basılır. Kaydetme hataları bir ileti kutusunda gösterilir.
 
-İlk aşamada tuş yakalama, zaman bilgisi, Başlat/Durdur ve kayıt durumu göstergesi bulunmaktadır. Temizleme, TXT dosyasına kaydetme ve iki ekran görüntüsü henüz eklenmemiştir.
+## Ekran görüntüleri
+
+### Tuş kaydı
+
+![Tuşlar ve zaman bilgileri](docs/01-tus-kaydi.png)
+
+### TXT dosyasına kaydetme
+
+![Kayıtların dosyaya kaydedilmesi](docs/02-kaydetme.png)
 
 ## Sınırlamalar
 

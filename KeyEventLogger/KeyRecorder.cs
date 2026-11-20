@@ -10,6 +10,11 @@ public sealed class KeyRecorder
 
     public void Start() => IsRecording = true;
     public void Stop() => IsRecording = false;
+    public void Clear() => entries.Clear();
+
+    public void Save(string path) => File.WriteAllLines(path,
+        entries.Select(entry => $"{entry.Time:yyyy-MM-dd HH:mm:ss.fff}\t{entry.Key}"),
+        System.Text.Encoding.UTF8);
 
     public void Record(Keys key)
     {
